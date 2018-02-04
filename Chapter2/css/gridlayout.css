@@ -31,7 +31,7 @@ time, mark, audio, video {
     font-weight: normal;
     font-style: normal;
 
-}    
+}              
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ 
     display:block;
 }
@@ -123,11 +123,19 @@ ol {
     margin-bottom: 1em
 }
 #container {
-    margin: auto 0;
-    padding-bottom: 1.5em;
+    margin: auto;
     overflow: hidden;
+    width: 948px;
+    padding-bottom: 1.5em;
 }
-
+.main {
+	float: left;
+    width: 624px;
+}
+aside {
+    float: right;
+    width: 300px;
+}
 ul.tags li {
     float: left;
     font-size: 14px;
