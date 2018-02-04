@@ -31,7 +31,7 @@ time, mark, audio, video {
     font-weight: normal;
     font-style: normal;
 
-}              
+}                 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ 
     display:block;
 }
@@ -123,19 +123,26 @@ ol {
     margin-bottom: 1em
 }
 #container {
-    margin: auto;
+    margin: auto 0;
     overflow: hidden;
-    width: 948px;
-    padding-bottom: 1.5em;
+	width: 95%;
+	padding: .625em 1.0548523% 1.5em; /* 10px/16px, 10px/948, 24px/16px */
 }
 .main {
 	float: left;
-    width: 624px;
+    width: 65.8227848%; /* 624/948 */
 }
+
 aside {
     float: right;
-    width: 300px;
+    width: 31.6455696%; /* 300/948 */
 }
+	aside img,
+	.main img,
+	.slats img{
+		width: 100%;
+		max-width: 100%;
+	}
 ul.tags li {
     float: left;
     font-size: 14px;
@@ -188,11 +195,10 @@ ul.tags li {
 }
 .slats li {
     float: left;
-    margin-right: 24px;
-    width: 300px;
-
+	margin-right: 2.5316456%; /* 24px / 948px */
+	width: 31.6455696%; /* 300/948 */
 }
 .slats li:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
