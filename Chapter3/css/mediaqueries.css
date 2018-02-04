@@ -141,21 +141,17 @@ header{
 	padding: 1.0548523%; /* 10px/948*/
     
 }
-.main {
-	display: table-cell;
-	padding-right: 2.5316456%; /* 24px / 948px */
-}
 
-aside {
-    display: table-cell;
-	width: 300px;
-}
-	aside img,
+
 	.main img,
 	.slats img{
 		width: 100%;
 		max-width: 100%;
 	}
+	aside img{
+		max-width: 100%;
+	}
+	
 ul.tags li {
     float: left;
     font-size: 14px;
@@ -189,7 +185,6 @@ ul.tags li {
     margin-bottom: 0em;
 }
 .related time {
-    /* 10px/16px */
     display: block;
     font-family: Helvetica, Arial, sans-serif;
     font-size: .625em;
@@ -206,14 +201,7 @@ ul.tags li {
     padding-top: 1.5em;
 	clear: both;
 }
-.slats li {
-    float: left;
-	margin-right: 2.5316456%; /* 24px / 948px */
-	width: 31.6455696%; /* 300/948 */
-}
-.slats li:last-child {
-    margin-right: 0;
-}
+
 .inner {
     margin: auto;
     overflow: hidden;
@@ -237,13 +225,14 @@ nav[role="navigation"] {
     text-transform: uppercase;
     width: 100%;
 }
+nav[role="navigation"] ul{
+	margin-bottom: 0;
+}
     nav[role="navigation"] li.active a {
         color: #fff;
         font-weight: bold;
     }
-    nav[role="navigation"] li {
-        float: left;
-    }
+
         nav[role="navigation"] li a:active {
             color: #FFF;
         }
@@ -252,13 +241,16 @@ nav[role="navigation"] {
             color: #fff;
         }
     nav[role="navigation"] ul {
-        margin-top: 0px
+        margin: 0;
     }
+	nav[role="navigation"] li{
+		padding: .625em 2em .625em 0;
+		border-top: 1px solid #333;
+		
+	}
     nav[role="navigation"] a {
-        border-radius: 4px;
         color: #ddd;
-        float: left;
-        margin: .625em 2em .625em 0;
+		display: block;
         text-decoration: none;
     }
 	footer[role="contentinfo"] {
@@ -271,16 +263,13 @@ nav[role="navigation"] {
 	    }
 	    footer[role="contentinfo"] .top {
 	        color: rgb(143,143,143);
-	        float: right;
 			padding-right: 0;
 	    }
 	        footer[role="contentinfo"] .top a:after {
 	            content: " \25B2 ";
 	            font-weight: bold;
 	        }
-	    footer[role="contentinfo"] nav {
-	        float: left
-	    }
+
 	    footer[role="contentinfo"] h1 {
 	        text-align: center
 	    }
@@ -311,3 +300,35 @@ nav[role="navigation"] {
 		    footer nav[role="navigation"] a {
 		        color: #999
 		    }
+/*
+.main {
+	display: table-cell;
+	padding-right: 2.5316456%; /* 24px / 948px */
+/* }
+aside {
+    display: table-cell;
+	width: 300px;
+}
+.slats li {
+    float: left;
+	margin-right: 2.5316456%; /* 24px / 948px */
+	/* width: 31.6455696%; /* 300/948 */
+	/* }
+.slats li:last-child {
+    margin-right: 0;
+}
+nav[role="navigation"] li {
+    float: left;
+}
+
+nav[role="navigation"] a {
+	float: left;
+}
+footer[role="contentinfo"] .top {
+	float: right;
+}
+footer[role="contentinfo"] nav {
+    float: left
+}
+
+*/
