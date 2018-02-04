@@ -29,7 +29,7 @@ time, mark, audio, video {
     font-weight: normal;
     font-style: normal;
 
-}s            
+}             
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ 
     display:block;
 }
@@ -300,7 +300,8 @@ nav[role="navigation"] ul{
 		    footer nav[role="navigation"] a {
 		        color: #999
 				}
-@media all and (min-width: 600px) {
+/* 600px */
+@media all and (min-width: 37.5em) {
 	.slats li {
 	    float: left;
 		margin-right: 2.5316456%; /* 24px / 948px */
@@ -311,7 +312,8 @@ nav[role="navigation"] ul{
 	}
 	
 }
-@media all and (min-width: 860px) {
+/* 860px */
+@media all and (min-width: 53.75em) {
 	aside{
 		display: block;
 		margin-bottom: 1em;
@@ -336,7 +338,8 @@ nav[role="navigation"] ul{
 	}
 
 }
-@media all and (min-width: 940px) {
+/* 940px */
+@media all and (min-width: 58.75em) {
 	.main {
 		display: table-cell;
 		padding-right: 2.5316456%; /* 24px / 948px */
@@ -350,7 +353,8 @@ nav[role="navigation"] ul{
 		width: 100%;
 	}
 }
-@media all and (min-width: 1300px) {
+/* 1300px */
+@media all and (min-width: 81.25em) {
 	.main section img{
 		margin-bottom: 1em;
 		border: 3px solid #dbdbdb;
@@ -358,6 +362,7 @@ nav[role="navigation"] ul{
 	.main .articleInfo{
 	    border-bottom: 2px solid #dbdbdb;
 	}
+	
 	.main section{
 		-moz-column-count: 2; /* Firefox */
 		-webkit-column-count: 2; /* Safari, Chrome */
