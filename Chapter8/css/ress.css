@@ -131,7 +131,6 @@ header{
     width: 95%;
     padding: .625em 1.0548523% 1.5em; /* 10px/16px, 10px/948, 24px/16px */
 }
-
 article{
 	background: #fff;
 }
@@ -144,6 +143,11 @@ article{
 	aside img{
 		max-width: 100%;
 	}
+.talkshow a, .call{
+	font-size: 1.5em; /* 24px/16px */
+	padding: .416666667em 0 .416666667em 50px;
+	background: url(../images/phone.png) left center no-repeat;
+}
 ul.tags li {
     float: left;
     font-size: 14px;
@@ -176,6 +180,15 @@ ul.tags li {
     line-height: 1em;
     margin-bottom: 0em;
 }
+.related a{
+	display:block;
+	border-bottom: 1px dotted #999;
+	padding: .3125em 0; /* 5px / 16px */
+}
+.touchscreen .related a{
+	display:block;
+	padding: .625em 0;
+}
 .related time {
     display: block;
     font-family: Helvetica, Arial, sans-serif;
@@ -187,7 +200,11 @@ ul.tags li {
     padding-top: 1.5em;
 	clear: both;
 }
-
+.touchscreen .more-stories a{
+	display:block;
+	padding: .625em 0;
+	border-bottom: 1px dotted #999;
+}
 .inner {
     margin: auto;
     overflow: hidden;
@@ -303,7 +320,6 @@ nav[role="navigation"] ul.hide{
 		    footer nav[role="navigation"] a {
 		        color: #999
 				}
-
 /* 600px */
 @media (min-width: 37.5em) {
 	.slats li {
@@ -313,6 +329,9 @@ nav[role="navigation"] ul.hide{
 	}
 	.slats li:last-child {
 	    margin-right: 0;
+	}
+	.touchscreen .more-stories a{
+		border-bottom: 0;
 	}
 	
 }
