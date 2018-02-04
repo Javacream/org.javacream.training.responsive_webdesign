@@ -29,7 +29,7 @@ time, mark, audio, video {
     font-weight: normal;
     font-style: normal;
 
-}             
+}           
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ 
     display:block;
 }
@@ -135,11 +135,10 @@ header{
 }
 
 #container {
-    margin: auto auto 1.5em auto;
+    margin: auto 0;
     overflow: hidden;
-	width: 95%;
-	padding: 1.0548523%; /* 10px/948*/
-    
+    width: 95%;
+    padding: .625em 1.0548523% 1.5em; /* 10px/16px, 10px/948, 24px/16px */
 }
 
 
@@ -151,7 +150,6 @@ header{
 	aside img{
 		max-width: 100%;
 	}
-	
 ul.tags li {
     float: left;
     font-size: 14px;
@@ -212,6 +210,17 @@ ul.tags li {
 /*
  * Nav
  ** --------------------------------------------------*/
+#nav-collapse{
+	display: none;
+	color: #fff;
+	text-align: right;
+	width: 100%;
+	padding: .625em 0 .625em 0;
+}
+#nav-collapse.active{
+	display: block;
+}
+ 
 nav[role="navigation"] {
     background-color: #9D0000;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#9D0000), to(#800505));
@@ -227,6 +236,9 @@ nav[role="navigation"] {
 }
 nav[role="navigation"] ul{
 	margin-bottom: 0;
+}
+nav[role="navigation"] ul.hide{
+	display:none;
 }
     nav[role="navigation"] li.active a {
         color: #fff;
@@ -326,6 +338,7 @@ nav[role="navigation"] ul{
         margin-right: 2%;
         width: 48%;
 	}
+
 	nav[role="navigation"] li {
 	    float: left;
 		border-top: 0;
@@ -362,7 +375,6 @@ nav[role="navigation"] ul{
 	.main .articleInfo{
 	    border-bottom: 2px solid #dbdbdb;
 	}
-	
 	.main section{
 		-moz-column-count: 2; /* Firefox */
 		-webkit-column-count: 2; /* Safari, Chrome */
