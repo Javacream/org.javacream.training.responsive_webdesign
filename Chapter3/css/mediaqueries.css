@@ -29,7 +29,7 @@ time, mark, audio, video {
     font-weight: normal;
     font-style: normal;
 
-}               
+}s            
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ 
     display:block;
 }
@@ -299,36 +299,74 @@ nav[role="navigation"] ul{
 		    }
 		    footer nav[role="navigation"] a {
 		        color: #999
-		    }
-/*
-.main {
-	display: table-cell;
-	padding-right: 2.5316456%; /* 24px / 948px */
-/* }
-aside {
-    display: table-cell;
-	width: 300px;
+				}
+@media all and (min-width: 600px) {
+	.slats li {
+	    float: left;
+		margin-right: 2.5316456%; /* 24px / 948px */
+		width: 31.6455696%; /* 300/948 */
+	}
+	.slats li:last-child {
+	    margin-right: 0;
+	}
+	
 }
-.slats li {
-    float: left;
-	margin-right: 2.5316456%; /* 24px / 948px */
-	/* width: 31.6455696%; /* 300/948 */
-	/* }
-.slats li:last-child {
-    margin-right: 0;
-}
-nav[role="navigation"] li {
-    float: left;
-}
+@media all and (min-width: 860px) {
+	aside{
+		display: block;
+		margin-bottom: 1em;
+		padding: 0 1%;
+		width: auto;
+	}
+	
+	aside section{
+        float: left;
+        margin-right: 2%;
+        width: 48%;
+	}
+	nav[role="navigation"] li {
+	    float: left;
+		border-top: 0;
+	}
+	nav[role="navigation"] a {
+		float: left;
+	}
+	footer[role="contentinfo"] .top {
+		float: right;
+	}
 
-nav[role="navigation"] a {
-	float: left;
 }
-footer[role="contentinfo"] .top {
-	float: right;
+@media all and (min-width: 940px) {
+	.main {
+		display: table-cell;
+		padding-right: 2.5316456%; /* 24px / 948px */
+	}
+	aside {
+	    display: table-cell;
+		width: 300px;
+	}
+	aside section{
+		float: none;
+		width: 100%;
+	}
 }
-footer[role="contentinfo"] nav {
-    float: left
+@media all and (min-width: 1300px) {
+	.main section img{
+		margin-bottom: 1em;
+		border: 3px solid #dbdbdb;
+	}
+	.main .articleInfo{
+	    border-bottom: 2px solid #dbdbdb;
+	}
+	.main section{
+		-moz-column-count: 2; /* Firefox */
+		-webkit-column-count: 2; /* Safari, Chrome */
+		column-count: 2;
+		-moz-column-gap: 1.5em; /* Firefox */
+		-webkit-column-gap: 1.5em; /* Safari, Chrome */
+		column-gap: 1.5em;
+		-moz-column-rule: 1px dotted #ccc; /* Firefox */
+		-webkit-column-rule: 1px dotted #ccc; /* Safari, Chrome */
+		column-rule: 1px dotted #ccc;
+	}
 }
-
-*/
