@@ -31,7 +31,7 @@ time, mark, audio, video {
     font-weight: normal;
     font-style: normal;
 
-}                 
+}                  
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ 
     display:block;
 }
@@ -125,17 +125,17 @@ ol {
 #container {
     margin: auto 0;
     overflow: hidden;
-	width: 95%;
-	padding: .625em 1.0548523% 1.5em; /* 10px/16px, 10px/948, 24px/16px */
+    width: 95%;
+    padding: .625em 1.0548523% 1.5em; /* 10px/16px, 10px/948, 24px/16px */
 }
 .main {
-	float: left;
-    width: 65.8227848%; /* 624/948 */
+	display: table-cell;
+	padding-right: 2.5316456%; /* 24px / 948px */
 }
 
 aside {
-    float: right;
-    width: 31.6455696%; /* 300/948 */
+    display: table-cell;
+	width: 300px;
 }
 	aside img,
 	.main img,
